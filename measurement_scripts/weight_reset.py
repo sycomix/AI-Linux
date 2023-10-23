@@ -15,6 +15,5 @@ import sys
 #         - schedweight_sb.txt
 
 if __name__ == "__main__":
-    file = open(str(sys.argv[1]), 'w')
-    file.write(str(0) + ',' + str(0) + '\n')
-    file.close()
+    with open(str(sys.argv[1]), 'w') as file:
+        file.write('0,0' + '\n')
